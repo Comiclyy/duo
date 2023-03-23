@@ -12,7 +12,7 @@ Alternatively, you can install Duo from the source code. Here's how you can do i
 
 1. Clone the GitHub repository:
 
-git clone https://github.com/yourusername/duo-terminal.git
+git clone https://github.com/comicly69/duo.git
 
 
 2. Navigate to the directory where the repository was cloned:

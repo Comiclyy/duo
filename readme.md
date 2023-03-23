@@ -34,12 +34,12 @@ duo
 
 Duo has many commands but here are some of the most common:
 
-- 'mint' : a multi-os open source package manager that is developed by Mint 
-- 'test' : run some ping tests to check response speeds and internet delays
-- 'config' : modify your duo config
-- 'source' : show the soruce for duo
-- 'update' : Check for updates for duo or any installed packages
-- 'exit' : Exit duo and return back to your bash terminal
+- `mint` : a multi-os open source package manager that is developed by Mint 
+- `test` : run some ping tests to check response speeds and internet delays
+- `config` : modify your duo config
+- `source` : show the soruce for duo
+- `update` : Check for updates for duo or any installed packages
+- `exit` : Exit duo and return back to your bash terminal
 - `ls`: lists the contents of the current directory.
 - `cd`: changes the current directory.
 - `pwd`: prints the current working directory.

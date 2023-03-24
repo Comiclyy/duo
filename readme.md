@@ -1,6 +1,6 @@
 # Duo Terminal
 
-Duo is a terminal application written in Python for Bash terminals. It is a lightweight and easy-to-use terminal that is designed to make your work more efficient.
+Duo is a terminal application written in bash and python for terminals. It is a lightweight and easy-to-use terminal that is designed to make your work more efficient.
 
 ## Installation
 

@@ -30,7 +30,7 @@ Once Duo is installed, you can run it from your terminal using the following com
 
 duo
 
-#commands
+# Commands
 
 Duo has many commands but here are some of the most common:
 

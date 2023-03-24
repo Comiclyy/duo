@@ -110,4 +110,4 @@ while true; do
     esac
 done
 
-echo "Exited Duo terminal."
+echo "Exited Duo terminal. "

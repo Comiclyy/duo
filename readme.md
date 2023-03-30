@@ -6,7 +6,7 @@ Duo is a terminal application written in bash and python for terminals. It is a 
 
 Duo can be easily installed using your favorite package manager. Here's how you can install Duo using `dnf`:
 
-dnf install duo
+`dnf install duo`
 
 Alternatively, you can install Duo from the source code. Here's how you can do it:
 
@@ -17,18 +17,18 @@ git clone https://github.com/comicly69/duo.git
 
 2. Navigate to the directory where the repository was cloned:
 
-cd duo
+`cd duo`
 
 3. Run the following command and complete the setup
 
-bash duo-install.sh
+`bash duo-install.sh`
 
 
 ## Usage
 
 Once Duo is installed, you can run it from your terminal using the following command:
 
-duo
+`duo`
 
 # Commands
 

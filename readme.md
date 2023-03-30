@@ -34,7 +34,7 @@ duo
 
 Duo has many commands but here are some of the most common:
 
-- `mint` : a multi-os open source package manager that is developed by Mint 
+- `mint` : a multi-os open source package manager that is developed by Mint inc.
 - `test` : run some ping tests to check response speeds and internet delays
 - `config` : modify your duo config
 - `source` : show the soruce for duo
@@ -47,7 +47,7 @@ Duo has many commands but here are some of the most common:
 
 ## Contributing
 
-Duo is an open-source project, and contributions are always welcome. If you want to contribute to Duo, here's how you can do it:
+Duo is an open-source project, and contributions are always welcome. If you want to contribute to Duo, here's how you can:
 
 1. Fork the Duo repository.
 2. Create a new branch and make your changes.

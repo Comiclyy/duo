@@ -5,7 +5,7 @@ while true; do
     read -p $'\e[32muser@mint-\e[0m\e[32mmint.lol:\e[0m\e[34m~\e[0m\e[32m$ \e[0m' command
     case "$command" in
         test)
-            ping google.com
+            ping -c 5 google.com
             ;;
         config)
             nano ~/.duo/config

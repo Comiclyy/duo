@@ -16,7 +16,7 @@ jobs:
       with:
         node-version: '16.x'
     - name: Increment Version
-      run: echo "VERSION=$((VERSION+2))" >> $GITHUB_ENV
+      run: echo "VERSION=$((VERSION+1))" >> $GITHUB_ENV
     - name: Commit Version Increment
       run: |
         git config --global user.email "github-actions[bot]@users.noreply.github.com"

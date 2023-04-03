@@ -8,7 +8,7 @@ while true; do
             ping -c 5 google.com
             ;;
         config)
-            nano ~/.duo/config
+            nano .duo/config.json
             ;;
         source)
             xdg-open https://github.com/Comicly69/duo

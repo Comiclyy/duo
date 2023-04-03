@@ -79,7 +79,7 @@ Duo is an open-source project, and contributions are always welcome. If you want
 2. Create a new branch and make your changes.
 3. Submit a pull request.
 
-Before submitting a pull request, make sure that your changes are thoroughly tested and documented.
+Before submitting a pull request, make sure that your changes are well tested and documented.
 
 ## License
 

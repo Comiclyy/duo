@@ -1,26 +1,28 @@
-name: Increment Version Number
-
+name: Version
 on:
   push:
-    branches:
-      - main
-
+    branches: [ main ]
 jobs:
-  increment_version_number:
+  my-job:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+      - name: Install dependencies
+        run: npm install
       - name: Increment version number
         run: |
           VERSION=$(cat version.txt)
-          if [[ "$VERSION" =~ ^[0-9]+$ ]]; then
-            NEW_VERSION=$((VERSION+1))
-            echo $NEW_VERSION > version.txt
-          else
-            echo "Error: version.txt does not contain a valid version number"
+          if ! [[ "$VERSION" =~ ^[0-9]+$ ]]; then
+            echo "ERROR: version.txt does not contain a valid integer"
             exit 1
           fi
+          NEW_VERSION=$((VERSION + 1))
+          echo $NEW_VERSION > version.txt
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:

@@ -54,15 +54,9 @@ If you would like to add a new command in bash, do the following:
 
 1. Presuming you already have duo installed on your computer, open your terminal and type duo new
 2. Now enter the path where you would like your new program to be.
-3. Once you select the folder duo will create a archive with duo in it and a file named mods.txt
-3.5 Unzip the archive
+3. Once you select the folder duo will create a archive with duo in it and a file named mods.txt, now unzip the archive
 4. Now either make a new file with the name of your commmand then .sh or navigate to duo.sh
-5. If you are using the main duo.sh file, create a new command like so:
-
-command(
-    code
-    ;;
-)
+5. If you are using the main duo.sh file, create a new command following the format in the code
 
 6. If you are using a new file, write #!/bin/bash then the code for your command. duo will automaticly define it in the main file in the next step.
 7. Once you are done, run duo build /path/to/folder/

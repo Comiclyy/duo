@@ -60,8 +60,11 @@ If you would like to add a new command in bash, do the following:
 5. If you are using the main duo.sh file, create a new command like so:
 
 command(
+
     code
+    
     ;;
+    
 )
 
 6. If you are using a new file, write #!/bin/bash then the code for your command. duo will automaticly define it in the main file in the next step.

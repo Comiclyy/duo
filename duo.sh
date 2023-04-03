@@ -100,10 +100,19 @@ while true; do
             jobs
             ;;
 
+        "duo build")
+            read -p "Enter path to folder: " folder_path
+            if [ -d "$folder_path" ]; then
+                cd $(dirname "$folder_path")
+                zip -r duo.zip "$(basename "$folder_path")"
+                echo "Build completed. Archive is in $(pwd)/duo.zip"
+            else
+                echo "Invalid folder path."
+            fi
+            ;;
         open*)
             xdg-open "${command#open }"
             ;;
-
         *)
             echo "Invalid command: $command"
             ;;

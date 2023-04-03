@@ -14,8 +14,8 @@ Alternatively, you can install Duo from the source code. Here's how you can do i
 
 git clone https://github.com/comicly69/duo.git
 
-
 2. Navigate to the directory where the repository was cloned:
+
 
 `cd duo`
 
@@ -55,12 +55,21 @@ If you would like to add a new command in bash, do the following:
 1. Presuming you already have duo installed on your computer, open your terminal and type duo new
 2. Now enter the path where you would like your new program to be.
 3. Once you select the folder duo will create a archive with duo in it and a file named mods.txt, now unzip the archive
-4. Now either make a new file with the name of your commmand then .sh or navigate to duo.sh
+4. Create a folder in the modules folder with the name of your command, then make a new file with the name of your commmand then .sh
 5. If you are using the main duo.sh file, create a new command following the format in the code
-
 6. If you are using a new file, write #!/bin/bash then the code for your command. duo will automaticly define it in the main file in the next step.
 7. Once you are done, run duo build /path/to/folder/
 8. Now run duo refresh and close your terminal. now you can use your new command in the duo terminal.
+
+If you perfer to write your commands in python, you can do the following:
+
+1. Presuming you already have duo installed on your computer, open your terminal and type duo new
+2. Now enter the path where you would like your new program to be.
+3. Once you select the folder duo will create a archive with duo in it and a file named mods.txt, now unzip the archive
+4. Create a new file with the name of your program and then .py
+5. Write your command in the python file.
+6. Once you are done, run duo build /path/to/folder/
+7. Now run duo refresh and close your terminal. now you can use your new command in the duo terminal.
 
 ## Contributing
 

@@ -1,34 +1,23 @@
-name: Increment Version
+name: Increment Version Number
 
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
-  increment-version:
+  increment_version_number:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        with:
-          node-version: '16'
-      - name: Read version file
-        id: read-version
-        run: echo "$(cat version.txt)"
-      - name: Increment version
-        id: increment-version
-        run: echo $(( $(cat version.txt) + 1 ))
-      - name: Update version file
-        run: echo "${{ steps.increment-version.outputs.stdout }}" > version.txt
-      - name: Commit changes
+      - name: Increment version number
         run: |
-          git config --global user.email "you@example.com"
-          git config --global user.name "Your Name"
-          git commit -am "Incremented version"
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+          VERSION=$(cat version.txt)
+          NEW_VERSION=$((VERSION+1))
+          echo $NEW_VERSION > version.txt
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          branch: main
-          directory: '.'
-          force: true
+          commit_message: 'Increment version number'
+          commit_options: '--no-verify'

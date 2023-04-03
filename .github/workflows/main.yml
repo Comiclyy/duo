@@ -1,0 +1,32 @@
+name: Increment Version
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  increment-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Read version file
+        id: read-version
+        run: echo "::set-output name=version::$(cat version.txt)"
+      - name: Increment version
+        id: increment-version
+        run: echo "::set-output name=version::$((${{ steps.read-version.outputs.version }} + 1))"
+      - name: Update version file
+        run: echo "${{ steps.increment-version.outputs.version }}" > version.txt
+      - name: Commit changes
+        run: |
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
+          git commit -am "Incremented version"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: main
+          directory: '.'
+          force: true

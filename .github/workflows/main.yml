@@ -11,14 +11,19 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          node-version: '16'
       - name: Read version file
         id: read-version
-        run: echo "::set-output name=version::$(cat version.txt)"
+        run: echo "$(cat version.txt)"
       - name: Increment version
         id: increment-version
-        run: echo "::set-output name=version::$((${{ steps.read-version.outputs.version }} + 1))"
+        run: echo "$((${steps.read-version.outputs.version} + 1))"
       - name: Update version file
-        run: echo "${{ steps.increment-version.outputs.version }}" > version.txt
+        run: echo "${{ steps.increment-version.outputs.stdout }}" > version.txt
+      - name: Set environment variables
+        run: |
+          echo "VERSION=$((${{ steps.read-version.outputs.version }} + 1))" >> $GITHUB_ENV
       - name: Commit changes
         run: |
           git config --global user.email "you@example.com"

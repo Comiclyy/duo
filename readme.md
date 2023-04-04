@@ -69,7 +69,7 @@ If you perfer to write your commands in python, you can do the following:
 4. Create a new file with the name of your program and then .py
 5. Write your command in the python file.
 6. Once you are done, run duo build /path/to/folder/
-7. Now run duo refresh and close your terminal. now you can use your new command in the duo terminal.
+7. Now close your terminal. now you can use your new command in the duo terminal.
 
 ## Contributing
 

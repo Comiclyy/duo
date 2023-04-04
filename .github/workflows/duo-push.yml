@@ -6,4 +6,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: one # Changed step name to "one"
-        run: echo "Hello"
+        run: touch version.txt
+        run: echo "Hello" > version.txt

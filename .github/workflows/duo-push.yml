@@ -5,5 +5,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Say Hello
+    - name: Check
       run: echo "Hello"

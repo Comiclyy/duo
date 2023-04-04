@@ -2,8 +2,8 @@ name: Duo Push
 on: [push]
 
 jobs:
-  build:
+  checker:
     runs-on: ubuntu-latest
     steps:
-    - name: Check
-      run: echo "Hello"
+      - name: one # Changed step name to "one"
+        run: echo "Hello"

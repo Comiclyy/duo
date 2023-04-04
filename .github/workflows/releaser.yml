@@ -12,16 +12,11 @@ jobs:
       MY_TOKEN: ${{ secrets.MY_TOKEN }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2.5.2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2.4.1
-        with:
-          node-version: '16.x'
+        uses: actions/checkout@v2
 
       - name: Create Release
         id: create_release
-        uses: actions/create-release@v1.0.11
+        uses: actions/create-release@v1.2.6
         env:
           GITHUB_TOKEN: ${{ env.MY_TOKEN }}
         with:
@@ -31,7 +26,7 @@ jobs:
           prerelease: false
 
       - name: Upload Asset
-        uses: actions/upload-release-asset@v1.1.7
+        uses: actions/upload-release-asset@v2.2.4
         env:
           GITHUB_TOKEN: ${{ env.MY_TOKEN }}
         with:

@@ -91,7 +91,6 @@ while true; do
         base64*)
             base64 "${command#base64 }"
             ;;
-
         history)
             history
             ;;

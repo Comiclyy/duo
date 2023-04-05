@@ -91,6 +91,9 @@ while true; do
         base64*)
             base64 "${command#base64 }"
             ;;
+        advanced)
+            python3 duo.py
+            ;;
         history)
             history
             ;;

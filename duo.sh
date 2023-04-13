@@ -92,6 +92,7 @@ while true; do
             base64 "${command#base64 }"
             ;;
         advanced)
+            cd ~/.duo/bin
             python3 duo.py
             ;;
         history)

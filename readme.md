@@ -71,8 +71,10 @@ If you perfer to write your commands in python, you can do the following:
 6. Once you are done, run duo build /path/to/folder/
 7. Now close your terminal. now you can use your new command in the duo terminal.
 
-##Data
-![Alt](https://repobeats.axiom.co/api/embed/cb9f30f479ea962536e2507e469a04718173bf3c.svg "Repobeats analytics image")
+
+
+##Activity
+![Alt](https://repobeats.axiom.co/api/embed/b2075c6d2b56afa1f073c50e56e8f984bcf27eec.svg "Repobeats analytics image")
 
 ## Contributing
 

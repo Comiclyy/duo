@@ -72,7 +72,7 @@ If you perfer to write your commands in python, you can do the following:
 7. Now close your terminal. now you can use your new command in the duo terminal.
 
 
-#Activity
+## Activity
 
 
 ![Alt](https://repobeats.axiom.co/api/embed/b2075c6d2b56afa1f073c50e56e8f984bcf27eec.svg "Repobeats analytics image")

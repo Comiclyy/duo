@@ -73,8 +73,11 @@ If you perfer to write your commands in python, you can do the following:
 
 
 
-##Activity
 ![Alt](https://repobeats.axiom.co/api/embed/b2075c6d2b56afa1f073c50e56e8f984bcf27eec.svg "Repobeats analytics image")
+
+
+
+
 
 ## Contributing
 
